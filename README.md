@@ -1,10 +1,23 @@
 # docker-utils
 
+## Install
 
-## For Windows
+### For Linux/macOS
 
 ```
-doskey lc={{ path to .bat file }} {{ container name }} $*
+alias {{ short command name }}="{{ path to .sh file }} {{ container name }}"
+```
+
+For example:
+
+
+alias lc="~/docker-exec-project.bat laravel"
+
+
+### For Windows
+
+```
+doskey {{ short command name }}={{ path to .bat file }} {{ container name }} $*
 ```
 
 For example:
@@ -12,8 +25,9 @@ For example:
 
 doskey lc=C:\Users\egorvakh\Desktop\docker-exec-project.bat laravel $*
 
+## Usage:
 
-Usage:
 
-
+```
 lc pwd
+```
