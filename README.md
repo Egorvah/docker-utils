@@ -16,4 +16,4 @@ doskey lc=C:\Users\egorvakh\Desktop\docker-exec-project.bat laravel $*
 Usage:
 
 
-lc composer install
+lc pwd
