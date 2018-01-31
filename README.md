@@ -11,7 +11,7 @@ alias {{ short command name }}="{{ path to .sh file }} {{ container name }}"
 For example:
 
 
-alias lc="~/docker-exec-project.bat laravel"
+alias lc="~/docker-exec-project.sh laravel"
 
 
 ### For Windows
