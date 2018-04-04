@@ -16,4 +16,4 @@ cmd=$(echo "${@:2}")
 projectDir=$(echo $PWD | sed "s#.*/##")
 path=$(echo "/var/www/$projectDir")
 
-eval "docker exec -it $1 /bin/sh -c \"cd $path && $cmd\""
+eval "docker exec -it $1 /bin/sh -c \"[ -d $path ] && cd $path; $cmd\""
